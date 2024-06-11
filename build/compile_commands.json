@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/rupert/projects/SAR-SavingAmazonRainforest/build",
+  "command": "/usr/sbin/x86_64-w64-mingw32-gcc -DSPDLOG_COMPILED_LIB @CMakeFiles/SAR.dir/includes_C.rsp -g -o CMakeFiles/SAR.dir/dependencies/src/gl.c.obj -c /home/rupert/projects/SAR-SavingAmazonRainforest/dependencies/src/gl.c",
+  "file": "/home/rupert/projects/SAR-SavingAmazonRainforest/dependencies/src/gl.c",
+  "output": "CMakeFiles/SAR.dir/dependencies/src/gl.c.obj"
+},
+{
+  "directory": "/home/rupert/projects/SAR-SavingAmazonRainforest/build",
+  "command": "/usr/sbin/x86_64-w64-mingw32-g++ -DSPDLOG_COMPILED_LIB @CMakeFiles/SAR.dir/includes_CXX.rsp -g -std=gnu++23 -o CMakeFiles/SAR.dir/src/main.cpp.obj -c /home/rupert/projects/SAR-SavingAmazonRainforest/src/main.cpp",
+  "file": "/home/rupert/projects/SAR-SavingAmazonRainforest/src/main.cpp",
+  "output": "CMakeFiles/SAR.dir/src/main.cpp.obj"
+}
+]
