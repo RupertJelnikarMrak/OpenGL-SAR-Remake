@@ -1,12 +1,17 @@
-#include <iostream>
-#include <glad/gl.h>
-#include <GLFW/glfw3.h>
-#include <stb/stb_image.h>
+#include <spdlog/spdlog.h>
 
-int main()
-{
+#include "engine/core/Logger.hpp"
+#include "game/Game.hpp"
 
-    std::cout << "Hello World" << std::endl;
-    std::cin.get();
-    return 0;
+int main() {
+    initSpdlog();
+
+    Game game;
+    int success = game.init();
+
+    if (success != 0) {
+        spdlog::critical("Game exited with code {}", success);
+    }
+
+    return success;
 }

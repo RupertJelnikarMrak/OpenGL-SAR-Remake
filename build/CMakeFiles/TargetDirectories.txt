@@ -1,3 +1,0 @@
-/home/rupert/projects/SAR-SavingAmazonRainforest/build/CMakeFiles/SAR.dir
-/home/rupert/projects/SAR-SavingAmazonRainforest/build/CMakeFiles/edit_cache.dir
-/home/rupert/projects/SAR-SavingAmazonRainforest/build/CMakeFiles/rebuild_cache.dir

@@ -14,6 +14,7 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${OUTPUT_DIR}/${CMAKE_BUILD_TYPE}")
 find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
 find_package(spdlog REQUIRED)
+find_package(IniCM REQUIRED)
 
 include_directories(
     ${CMAKE_SOURCE_DIR}/include
@@ -24,6 +25,7 @@ link_libraries(
     ${OPENGL_LIBRARIES}
     spdlog::spdlog
     glfw3
+    IniCM
 )
 
 file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS
@@ -39,6 +41,5 @@ file(GLOB_RECURSE ASSETS_FILES CONFIGURE_DEPENDS
     ${CMAKE_SOURCE_DIR}/assets/*
 )
 
-foreach(ASSET_FILE ${ASSETS_FILES})
-    file(COPY ${ASSET_FILE} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/assets)
-endforeach()
+file(COPY ${CMAKE_SOURCE_DIR}/assets/ DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/assets/)
+file(COPY ${CMAKE_SOURCE_DIR}/dependencies/bin/ DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
